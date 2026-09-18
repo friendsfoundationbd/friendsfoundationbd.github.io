@@ -1,87 +1,798 @@
 <!doctype html>
 <html lang="bn">
+
 <head>
+
 <meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Friends' Foundation | Friends for Friends</title>
-<meta name="description" content="Friends' Foundation — Friends for Friends. অসুস্থ ও অসহায় বন্ধুদের সহায়তা এবং প্রয়াত বন্ধুদের পরিবারের পাশে থাকা।">
+
+<meta name="description" content="Friends' Foundation — Friends for Friends. বন্ধুর জন্য বন্ধু। অসুস্থ ও অসহায় বন্ধুদের পাশে থাকা এবং প্রয়াত বন্ধুদের পরিবারের সহযোগিতায় একটি মানবিক উদ্যোগ।">
+
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,"Noto Sans Bengali",sans-serif;line-height:1.8;background:#f7faf9;color:#17352d;font-size:18px}
-header{background:#fff;border-bottom:1px solid #dce8e3;position:sticky;top:0;z-index:10}
-.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:15px}
-.logo{font-size:25px;font-weight:800;color:#145c4a}.tag{font-size:14px;color:#55746b}
-nav a{margin-left:14px;text-decoration:none;color:#17352d;font-weight:700}
-.hero{max-width:1100px;margin:auto;padding:70px 20px 55px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
-.badge{display:inline-block;padding:6px 12px;border-radius:20px;background:#e3f2ec;color:#145c4a;font-weight:700}
-h1{font-size:48px;line-height:1.15;margin:18px 0 12px;color:#104b3d}
-h2{font-size:32px;color:#104b3d;margin-top:0}
-.lead{font-size:21px;max-width:700px}
-.btn{display:inline-block;background:#145c4a;color:#fff;text-decoration:none;padding:12px 20px;border-radius:10px;font-weight:800;margin-top:12px}
-.hero-card{background:#eaf5f1;border-radius:24px;padding:30px;text-align:center;border:1px solid #cfe4dc}
-.hero-card .symbol{font-size:76px;line-height:1}
-section{max-width:1100px;margin:auto;padding:55px 20px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:#fff;padding:24px;border-radius:18px;border:1px solid #dce8e3;box-shadow:0 5px 18px rgba(20,92,74,.06)}
-.card h3{font-size:22px;color:#145c4a;margin-top:0}
-.quote{background:#145c4a;color:#fff;border-radius:22px;padding:35px;text-align:center;font-size:27px;font-weight:800}
-footer{background:#123d33;color:#fff;padding:35px 20px;text-align:center}
-.small{font-size:15px;opacity:.9}
-@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:45px}.cards{grid-template-columns:1fr}h1{font-size:38px}.nav{align-items:flex-start;flex-direction:column}nav a{margin:0 12px 0 0}}
+
+*{
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Arial,"Noto Sans Bengali",sans-serif;
+line-height:1.8;
+background:#f7faf9;
+color:#17352d;
+font-size:18px;
+}
+
+/* HEADER */
+
+header{
+background:#ffffff;
+border-bottom:1px solid #dce8e3;
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.nav{
+max-width:1100px;
+margin:auto;
+padding:14px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:15px;
+}
+
+.logo{
+font-size:25px;
+font-weight:800;
+color:#145c4a;
+}
+
+.tag{
+font-size:15px;
+color:#55746b;
+}
+
+nav a{
+margin-left:14px;
+text-decoration:none;
+color:#17352d;
+font-weight:700;
+}
+
+/* HERO */
+
+.hero{
+max-width:1100px;
+margin:auto;
+padding:70px 20px 55px;
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:30px;
+align-items:center;
+}
+
+.badge{
+display:inline-block;
+padding:7px 14px;
+border-radius:20px;
+background:#e3f2ec;
+color:#145c4a;
+font-weight:700;
+}
+
+h1{
+font-size:48px;
+line-height:1.15;
+margin:18px 0 12px;
+color:#104b3d;
+}
+
+h2{
+font-size:32px;
+color:#104b3d;
+margin-top:0;
+}
+
+.lead{
+font-size:21px;
+max-width:700px;
+}
+
+.btn{
+display:inline-block;
+background:#145c4a;
+color:#ffffff;
+text-decoration:none;
+padding:13px 22px;
+border-radius:10px;
+font-weight:800;
+margin-top:12px;
+}
+
+.hero-card{
+background:#eaf5f1;
+border-radius:24px;
+padding:30px;
+text-align:center;
+border:1px solid #cfe4dc;
+}
+
+.hero-card .symbol{
+font-size:76px;
+line-height:1;
+}
+
+/* SECTION */
+
+section{
+max-width:1100px;
+margin:auto;
+padding:55px 20px;
+}
+
+/* THREE MAIN BUTTONS */
+
+.main-buttons{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:30px;
+}
+
+.main-button{
+display:block;
+text-decoration:none;
+background:#ffffff;
+color:#145c4a;
+padding:30px 20px;
+border-radius:20px;
+border:2px solid #cfe4dc;
+text-align:center;
+box-shadow:0 6px 20px rgba(20,92,74,.08);
+}
+
+.main-button .icon{
+font-size:45px;
+display:block;
+margin-bottom:8px;
+}
+
+.main-button .english{
+font-size:26px;
+font-weight:800;
+display:block;
+}
+
+.main-button .bangla{
+font-size:19px;
+font-weight:700;
+display:block;
+margin-top:4px;
+}
+
+/* CONTENT BOX */
+
+.content-box{
+background:#ffffff;
+padding:32px;
+border-radius:20px;
+border:1px solid #dce8e3;
+box-shadow:0 5px 18px rgba(20,92,74,.06);
+}
+
+.content-box p{
+margin-top:0;
+margin-bottom:18px;
+}
+
+/* MISSION AND VISION */
+
+.list-box{
+background:#ffffff;
+padding:30px 32px;
+border-radius:20px;
+border:1px solid #dce8e3;
+box-shadow:0 5px 18px rgba(20,92,74,.06);
+}
+
+.list-box ul{
+padding-left:25px;
+}
+
+.list-box li{
+margin-bottom:16px;
+}
+
+/* OUR WORK */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card{
+background:#ffffff;
+padding:24px;
+border-radius:18px;
+border:1px solid #dce8e3;
+box-shadow:0 5px 18px rgba(20,92,74,.06);
+}
+
+.card h3{
+font-size:22px;
+color:#145c4a;
+margin-top:0;
+}
+
+/* QUOTE */
+
+.quote{
+background:#145c4a;
+color:#ffffff;
+border-radius:22px;
+padding:35px;
+text-align:center;
+font-size:27px;
+font-weight:800;
+}
+
+/* FOOTER */
+
+footer{
+background:#123d33;
+color:#ffffff;
+padding:35px 20px;
+text-align:center;
+}
+
+.small{
+font-size:15px;
+opacity:.9;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+.hero{
+grid-template-columns:1fr;
+padding-top:45px;
+}
+
+.main-buttons{
+grid-template-columns:1fr;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+h1{
+font-size:38px;
+}
+
+h2{
+font-size:29px;
+}
+
+.nav{
+align-items:flex-start;
+flex-direction:column;
+}
+
+nav a{
+margin:0 12px 0 0;
+}
+
+.content-box,
+.list-box{
+padding:24px;
+}
+
+}
+
 </style>
+
 </head>
+
+
 <body>
+
+
+<!-- HEADER -->
+
 <header>
+
 <div class="nav">
-<div><div class="logo">Friends' Foundation</div><div class="tag">বন্ধুর জন্য বন্ধু</div></div>
-<nav><a href="#about">পরিচিতি</a><a href="#work">আমাদের কাজ</a><a href="#contact">যোগাযোগ</a></nav>
+
+<div>
+
+<div class="logo">
+Friends' Foundation
 </div>
+
+<div class="tag">
+বন্ধুর জন্য বন্ধু
+</div>
+
+</div>
+
+
+<nav>
+
+<a href="#about">ABOUT</a>
+
+<a href="#mission">MISSION</a>
+
+<a href="#vision">VISION</a>
+
+<a href="#work">আমাদের কাজ</a>
+
+<a href="#contact">যোগাযোগ</a>
+
+</nav>
+
+</div>
+
 </header>
 
+
 <main>
+
+
+<!-- HERO -->
+
 <section class="hero">
+
 <div>
-<span class="badge">Friends for Friends</span>
-<h1>বন্ধুর জন্য বন্ধু</h1>
-<p class="lead">অসুস্থ ও অসহায় বন্ধুদের পাশে থাকা এবং প্রয়াত বন্ধুদের পরিবারের সহযোগিতায় মানবিক বন্ধনের একটি উদ্যোগ।</p>
-<a class="btn" href="#work">আমাদের কাজ দেখুন</a>
+
+<span class="badge">
+Friends for Friends
+</span>
+
+<h1>
+বন্ধুর জন্য বন্ধু
+</h1>
+
+<p class="lead">
+অসুস্থ ও অসহায় বন্ধুদের পাশে থাকা এবং প্রয়াত
+বন্ধুদের পরিবারের সহযোগিতায় মানবিক বন্ধনের
+একটি উদ্যোগ।
+</p>
+
+<a class="btn" href="#about">
+আমাদের সম্পর্কে জানুন
+</a>
+
 </div>
+
+
 <div class="hero-card">
-<div class="symbol">🤝</div>
-<h2>Symbol of Humanity</h2>
-<p>কাঁধে কাঁধ মিলিয়ে বন্ধুর পাশে বন্ধু।</p>
+
+<div class="symbol">
+🤝
 </div>
+
+<h2>
+Symbol of Humanity
+</h2>
+
+<p>
+কাঁধে কাঁধ মিলিয়ে বন্ধুর পাশে বন্ধু।
+</p>
+
+</div>
+
 </section>
 
-<section id="about">
-<h2>Friends' Foundation সম্পর্কে</h2>
-<p>Friends' Foundation একটি বন্ধুত্বভিত্তিক মানবিক উদ্যোগ। আমাদের লক্ষ্য—বন্ধুর প্রয়োজনে বন্ধুর পাশে দাঁড়ানো, সহযোগিতার হাত বাড়িয়ে দেওয়া এবং পারস্পরিক সহমর্মিতার বন্ধন আরও শক্তিশালী করা।</p>
-</section>
 
-<section id="work">
-<h2>আমাদের কাজ</h2>
-<div class="cards">
-<div class="card"><h3>অসুস্থ বন্ধুর সহায়তা</h3><p>অসুস্থ ও অসহায় বন্ধুদের প্রয়োজন অনুযায়ী চিকিৎসা ও মানবিক সহায়তায় পাশে থাকা।</p></div>
-<div class="card"><h3>প্রয়াত বন্ধুর পরিবার</h3><p>প্রয়াত বন্ধুদের পরিবারের সদস্যদের প্রয়োজন অনুযায়ী সহযোগিতার উদ্যোগ নেওয়া।</p></div>
-<div class="card"><h3>বন্ধুত্বের তহবিল</h3><p>সদস্যদের সহযোগিতায় তহবিল গঠন ও দায়িত্বশীলভাবে পরিচালনার মাধ্যমে দীর্ঘমেয়াদি সহায়তার ভিত্তি তৈরি করা।</p></div>
-</div>
-</section>
+<!-- THREE MAIN BUTTONS -->
 
 <section>
-<div class="quote">“Friends for Friends”<br><span style="font-size:20px;font-weight:500">বন্ধুর জন্য বন্ধু — মানবতার প্রতীক</span></div>
+
+<h2>
+Friends' Foundation
+</h2>
+
+<p>
+আমাদের সম্পর্কে, আমাদের লক্ষ্য এবং ভবিষ্যৎ
+ভাবনা জানতে নিচের যেকোনো একটি অংশ নির্বাচন করুন।
+</p>
+
+
+<div class="main-buttons">
+
+
+<a class="main-button" href="#about">
+
+<span class="icon">
+👥
+</span>
+
+<span class="english">
+ABOUT
+</span>
+
+<span class="bangla">
+পরিচিতি
+</span>
+
+</a>
+
+
+<a class="main-button" href="#mission">
+
+<span class="icon">
+🎯
+</span>
+
+<span class="english">
+MISSION
+</span>
+
+<span class="bangla">
+আমাদের লক্ষ্য
+</span>
+
+</a>
+
+
+<a class="main-button" href="#vision">
+
+<span class="icon">
+👁️
+</span>
+
+<span class="english">
+VISION
+</span>
+
+<span class="bangla">
+আমাদের ভবিষ্যৎ ভাবনা
+</span>
+
+</a>
+
+
+</div>
+
 </section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>
+ABOUT — পরিচিতি
+</h2>
+
+
+<div class="content-box">
+
+<p>
+
+<strong>Friends' Foundation — “বন্ধুর জন্য বন্ধু”</strong>
+একটি বন্ধুত্বভিত্তিক মানবিক উদ্যোগ।
+
+বন্ধুত্বকে শুধু স্মৃতির মধ্যে সীমাবদ্ধ না রেখে,
+বন্ধুর প্রয়োজনে বন্ধুর পাশে দাঁড়ানোই আমাদের
+মূল লক্ষ্য।
+
+</p>
+
+
+<p>
+
+আমাদের উদ্যোগের মূল উদ্দেশ্য হলো—
+অসুস্থ ও অসহায় বন্ধুদের প্রয়োজনের সময়ে
+সহযোগিতা করা এবং প্রয়াত বন্ধুদের পরিবারের
+পাশে দাঁড়ানো।
+
+</p>
+
+
+<p>
+
+পারস্পরিক সহযোগিতা, সহমর্মিতা ও দায়িত্ববোধের
+মাধ্যমে বন্ধুদের মধ্যে মানবিক বন্ধন আরও
+শক্তিশালী করাই আমাদের প্রত্যাশা।
+
+</p>
+
+
+<p>
+
+Friends' Foundation-এর সদস্য বন্ধুরা বিভিন্ন
+ছোট ছোট গ্রুপে সংগঠিত।
+
+প্রতিটি গ্রুপের জন্য একজন
+<strong>সেবক</strong> দায়িত্ব পালন করেন।
+
+সেবক তাঁর গ্রুপের বন্ধুদের সঙ্গে যোগাযোগ রক্ষা,
+নির্ধারিত চাঁদা সংগ্রহ এবং প্রয়োজনের সময়ে
+সহযোগিতার উদ্যোগ গ্রহণে ভূমিকা রাখেন।
+
+</p>
+
+
+<p>
+
+একটি <strong>নির্বাহী কমিটি</strong> সামগ্রিক
+কার্যক্রম পরিচালনা ও তদারকি করে।
+
+বন্ধুদের কল্যাণে সংগৃহীত তহবিল দায়িত্বশীলভাবে
+পরিচালনা এবং ভবিষ্যতে আরও বেশি বন্ধুর পাশে
+দাঁড়ানোর উপযোগী করে তোলাও আমাদের অন্যতম লক্ষ্য।
+
+</p>
+
+
+<p>
+
+আমরা বিশ্বাস করি—
+একজন বন্ধুর দুঃসময়ে আরেকজন বন্ধু পাশে
+দাঁড়ালে বন্ধুত্বের প্রকৃত অর্থ প্রকাশ পায়।
+
+</p>
+
+
+<p>
+
+<strong>
+বন্ধুত্ব আমাদের শক্তি, সহযোগিতা আমাদের দায়িত্ব।
+</strong>
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- MISSION -->
+
+<section id="mission">
+
+<h2>
+MISSION — আমাদের লক্ষ্য
+</h2>
+
+
+<div class="list-box">
+
+<ul>
+
+<li>
+অসুস্থ ও অসহায় বন্ধুদের প্রয়োজনের সময়ে
+পাশে দাঁড়ানো।
+</li>
+
+<li>
+প্রয়াত বন্ধুদের পরিবারের প্রয়োজন অনুযায়ী
+সহযোগিতার উদ্যোগ নেওয়া।
+</li>
+
+<li>
+বন্ধুদের মধ্যে পারস্পরিক সহযোগিতা,
+সহমর্মিতা ও দায়িত্ববোধ শক্তিশালী করা।
+</li>
+
+<li>
+সদস্যদের সহযোগিতায় একটি সুসংগঠিত তহবিল
+গঠন ও দায়িত্বশীলভাবে পরিচালনা করা।
+</li>
+
+<li>
+সংগঠিতভাবে বন্ধুদের কল্যাণে মানবিক সহায়তা
+পৌঁছে দেওয়া।
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+<!-- VISION -->
+
+<section id="vision">
+
+<h2>
+VISION — আমাদের ভবিষ্যৎ ভাবনা
+</h2>
+
+
+<div class="list-box">
+
+<ul>
+
+<li>
+এমন একটি শক্তিশালী বন্ধুত্বের নেটওয়ার্ক
+গড়ে তোলা, যেখানে কোনো বন্ধু বিপদের সময়ে
+নিজেকে একা মনে না করেন।
+</li>
+
+<li>
+দীর্ঘমেয়াদে একটি স্থায়ী ও দায়িত্বশীল
+সহায়তা তহবিল গড়ে তোলা।
+</li>
+
+<li>
+সংগঠিতভাবে বন্ধু ও তাঁদের পরিবারের
+কল্যাণে কাজ করার সক্ষমতা বৃদ্ধি করা।
+</li>
+
+<li>
+বন্ধুত্বকে মানবিক দায়িত্ব, সহযোগিতা ও
+ভালোবাসার শক্তিতে পরিণত করা।
+</li>
+
+<li>
+আগামী প্রজন্মের জন্য পারস্পরিক সহযোগিতা
+ও মানবিক বন্ধনের একটি সুন্দর উদাহরণ
+রেখে যাওয়া।
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+<!-- OUR WORK -->
+
+<section id="work">
+
+<h2>
+আমাদের কাজ
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+🤝 অসুস্থ বন্ধুর সহায়তা
+</h3>
+
+<p>
+অসুস্থ ও অসহায় বন্ধুদের প্রয়োজন অনুযায়ী
+চিকিৎসা ও মানবিক সহায়তায় পাশে থাকা।
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🕊️ প্রয়াত বন্ধুর পরিবার
+</h3>
+
+<p>
+প্রয়াত বন্ধুদের পরিবারের সদস্যদের প্রয়োজন
+অনুযায়ী সহযোগিতার উদ্যোগ নেওয়া।
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+💚 বন্ধুত্বের তহবিল
+</h3>
+
+<p>
+সদস্যদের সহযোগিতায় তহবিল গঠন ও
+দায়িত্বশীলভাবে পরিচালনার মাধ্যমে
+দীর্ঘমেয়াদি সহায়তার ভিত্তি তৈরি করা।
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- QUOTE -->
+
+<section>
+
+<div class="quote">
+
+“Friends for Friends”
+
+<br>
+
+<span style="font-size:20px;font-weight:500">
+
+বন্ধুর জন্য বন্ধু — মানবিক বন্ধনের এক অঙ্গীকার
+
+</span>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
 
 <section id="contact">
-<h2>যোগাযোগ</h2>
-<p><strong>Friends' Foundation</strong></p>
-<p>Email: <a href="mailto:friendsfoundationoct2007@gmail.com">friendsfoundationoct2007@gmail.com</a></p>
-<p class="small">এই ওয়েবসাইটের তথ্য সময়ের সঙ্গে Friends' Foundation-এর প্রয়োজন অনুযায়ী হালনাগাদ করা যাবে।</p>
+
+<h2>
+যোগাযোগ
+</h2>
+
+
+<div class="content-box">
+
+<p>
+<strong>
+Friends' Foundation
+</strong>
+</p>
+
+
+<p>
+
+Email:
+
+<a href="mailto:friendsfoundationoct2007@gmail.com">
+friendsfoundationoct2007@gmail.com
+</a>
+
+</p>
+
+
+<p class="small">
+
+এই ওয়েবসাইটের তথ্য সময়ের সঙ্গে
+Friends' Foundation-এর প্রয়োজন অনুযায়ী
+হালনাগাদ করা যাবে।
+
+</p>
+
+</div>
+
 </section>
+
+
 </main>
 
+
+<!-- FOOTER -->
+
 <footer>
-<strong>Friends' Foundation</strong><br>
+
+<strong>
+Friends' Foundation
+</strong>
+
+<br>
+
 বন্ধুর জন্য বন্ধু • Friends for Friends • Symbol of Humanity
+
 </footer>
+
+
 </body>
+
 </html>
